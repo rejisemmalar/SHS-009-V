@@ -1740,8 +1740,15 @@ Division As screen:
                 ZIndex: =4
 
                 Button4 As button:
-                    OnSelect: |-
-                        =SubmitForm(Form1);NewForm(Form1);UpdateContext({showpopup:false});Notify("The division has been added successfully",NotificationType.Success);ResetForm(Form1);
+                    OnSelect: |
+                        =SubmitForm(Form1);
+                        NewForm(Form1);
+                        UpdateContext({showpopup: false});
+                        Notify(
+                            "The division has been added successfully",
+                            NotificationType.Success
+                        );
+                        ResetForm(Form1);
                     Text: ="Save"
                     ZIndex: =1
 
