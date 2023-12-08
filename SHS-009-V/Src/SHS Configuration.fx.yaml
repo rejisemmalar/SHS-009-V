@@ -4,55 +4,6 @@
         CurrentScreen: ="Configuration"
         Height: =768
 
-    CanVasContainer_16 As groupContainer.manualLayoutContainer:
-        Height: =App.Height-Component1_1.ComHeaderHeight
-        Width: =App.Width-Component1_1.VarMenuWidth
-        X: =SHSConfigComp.VarMenuWidth
-        Y: =Component1_1.ComHeaderHeight
-        ZIndex: =7
-
-        Icon13 As icon.HorizontalLine:
-            BorderColor: =RGBA(102, 102, 102, 1)
-            BorderThickness: =1
-            Color: =RGBA(102, 102, 102, 1)
-            Height: =1
-            Icon: =Icon.HorizontalLine
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            Width: =1039
-            X: =52
-            Y: =60
-            ZIndex: =1
-
-        Label13 As label:
-            Color: =RGBA(0, 18, 107, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =58
-            Size: =20
-            Text: ="Supplier Happiness Survey Settings"
-            Width: =550
-            X: =52
-            Y: =2
-            ZIndex: =2
-
-        Container3 As groupContainer.manualLayoutContainer:
-            DropShadow: =DropShadow.Semilight
-            Height: =528
-            Width: =596
-            X: =52
-            Y: =84
-            ZIndex: =3
-
-        Container4 As groupContainer.manualLayoutContainer:
-            DropShadow: =DropShadow.Semilight
-            Height: =298
-            Width: =355
-            X: =702
-            Y: =84
-            ZIndex: =4
-
     "'SHSConfig Main' As groupContainer.verticalAutoLayoutContainer":
         Height: =App.Height-SHSConfigComp.ComHeaderHeight
         LayoutDirection: =LayoutDirection.Vertical
@@ -61,4 +12,576 @@
         X: =SHSConfigComp.VarMenuWidth
         Y: =SHSConfigComp.ComHeaderHeight
         ZIndex: =8
+
+        Label13 As label:
+            Color: =RGBA(0, 18, 107, 1)
+            FontWeight: =FontWeight.Bold
+            Size: =20
+            Text: ="Supplier Happiness Survey Settings"
+            Width: =550
+            X: =52
+            Y: =2
+            ZIndex: =1
+
+        Container26 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =40
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            Icon13 As icon.HorizontalLine:
+                BorderColor: =RGBA(102, 102, 102, 1)
+                BorderThickness: =1
+                Color: =RGBA(102, 102, 102, 1)
+                Height: =2
+                Icon: =Icon.HorizontalLine
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                Width: =Parent.Width-20
+                X: =52
+                Y: =60
+                ZIndex: =1
+
+        Container40 As groupContainer.horizontalAutoLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =3
+
+            Container41 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =20
+                LayoutMode: =LayoutMode.Auto
+                Width: =40
+                ZIndex: =1
+
+            Container41_1 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =700
+                LayoutMode: =LayoutMode.Auto
+                Width: =700
+                ZIndex: =2
+
+                Container43 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(139, 154, 159, 1)
+                    BorderThickness: =2
+                    FillPortions: =0
+                    Height: =540
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    ZIndex: =1
+
+                    Label31 As label:
+                        Fill: =RGBA(214, 221, 224, 1)
+                        FontWeight: =FontWeight.Bold
+                        PaddingLeft: =10
+                        Size: =16
+                        Text: ="Edit Configuration"
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    Label36 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Height: =30
+                        Text: |-
+                            ="Stakeholder : Supplier"
+                        Width: =300
+                        ZIndex: =2
+
+                    Container26_2 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =40
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =3
+
+                        Icon13_1 As icon.HorizontalLine:
+                            BorderColor: =RGBA(102, 102, 102, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(102, 102, 102, 1)
+                            Height: =2
+                            Icon: =Icon.HorizontalLine
+                            PaddingBottom: =10
+                            PaddingLeft: =10
+                            PaddingRight: =10
+                            PaddingTop: =10
+                            Width: =Parent.Width-20
+                            X: =52
+                            Y: =60
+                            ZIndex: =1
+
+                    Container26_4 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Start
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =40
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width
+                        ZIndex: =4
+
+                        Label36_5 As label:
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Text: ="Current Year"
+                            Width: =117
+                            ZIndex: =1
+
+                        Label36_6 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: ="*"
+                            Width: =194
+                            ZIndex: =2
+
+                    Container26_5 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =40
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutGap: =20
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =5
+
+                        Label36_7 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: =""
+                            Width: =10
+                            ZIndex: =1
+
+                        Dropdown1 As dropdown:
+                            AllowEmptySelection: =true
+                            FillPortions: =1
+                            Items: ='HACT Config'
+                            ZIndex: =2
+
+                        Label36_8 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: =""
+                            Width: =10
+                            ZIndex: =3
+
+                        Button17 As button:
+                            Text: ="Update"
+                            ZIndex: =4
+
+                        Label36_9 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: =""
+                            Width: =10
+                            ZIndex: =5
+
+                    Container26_6 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =20
+                        LayoutAlignItems: =LayoutAlignItems.End
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =6
+
+                        Icon13_3 As icon.HorizontalLine:
+                            BorderColor: =RGBA(102, 102, 102, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(102, 102, 102, 1)
+                            Height: =2
+                            Icon: =Icon.HorizontalLine
+                            PaddingBottom: =10
+                            PaddingLeft: =10
+                            PaddingRight: =10
+                            PaddingTop: =10
+                            Width: =Parent.Width-20
+                            X: =52
+                            Y: =60
+                            ZIndex: =1
+
+                    Container26_7 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Start
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =40
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width
+                        ZIndex: =7
+
+                        Label36_10 As label:
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Text: ="Current Year"
+                            Width: =117
+                            ZIndex: =1
+
+                        Label36_11 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: ="*"
+                            Width: =194
+                            ZIndex: =2
+
+                    Container26_8 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =40
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutGap: =20
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =8
+
+                        Label36_12 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: =""
+                            Width: =10
+                            ZIndex: =1
+
+                        Dropdown1_1 As dropdown:
+                            AllowEmptySelection: =true
+                            FillPortions: =1
+                            Items: =["Q1","Q2","Q3","Q4"]
+                            ZIndex: =2
+
+                        Label36_13 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: =""
+                            Width: =10
+                            ZIndex: =3
+
+                        Button17_1 As button:
+                            Text: ="Update"
+                            ZIndex: =4
+
+                        Label36_14 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: =""
+                            Width: =10
+                            ZIndex: =5
+
+                    Container26_9 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =20
+                        LayoutAlignItems: =LayoutAlignItems.End
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =9
+
+                        Icon13_4 As icon.HorizontalLine:
+                            BorderColor: =RGBA(102, 102, 102, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(102, 102, 102, 1)
+                            Height: =2
+                            Icon: =Icon.HorizontalLine
+                            PaddingBottom: =10
+                            PaddingLeft: =10
+                            PaddingRight: =10
+                            PaddingTop: =10
+                            Width: =Parent.Width-20
+                            X: =52
+                            Y: =60
+                            ZIndex: =1
+
+                    Container26_10 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Start
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =40
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width
+                        ZIndex: =10
+
+                        Label36_15 As label:
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Text: ="Current Year"
+                            Width: =117
+                            ZIndex: =1
+
+                        Label36_16 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: ="*"
+                            Width: =194
+                            ZIndex: =2
+
+                    Container26_11 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =40
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutGap: =20
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =11
+
+                        Label36_17 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: =""
+                            Width: =10
+                            ZIndex: =1
+
+                        TextInput1 As text:
+                            Default: ="Text input"
+                            FillPortions: =1
+                            ZIndex: =6
+
+                        Label36_18 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: =""
+                            Width: =10
+                            ZIndex: =7
+
+                        Button17_2 As button:
+                            Text: ="Add"
+                            ZIndex: =8
+
+                        Label36_19 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: =""
+                            Width: =10
+                            ZIndex: =9
+
+                    Container26_12 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =20
+                        LayoutAlignItems: =LayoutAlignItems.End
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =12
+
+                        Icon13_5 As icon.HorizontalLine:
+                            BorderColor: =RGBA(102, 102, 102, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(102, 102, 102, 1)
+                            Height: =2
+                            Icon: =Icon.HorizontalLine
+                            PaddingBottom: =10
+                            PaddingLeft: =10
+                            PaddingRight: =10
+                            PaddingTop: =10
+                            Width: =Parent.Width-20
+                            X: =52
+                            Y: =60
+                            ZIndex: =1
+
+                    Container26_13 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Start
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =40
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width
+                        ZIndex: =13
+
+                        Label36_20 As label:
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Text: ="Current Year"
+                            Width: =117
+                            ZIndex: =1
+
+                        Label36_21 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: ="*"
+                            Width: =194
+                            ZIndex: =2
+
+                    Container26_14 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =40
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutGap: =20
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =14
+
+                        Label36_23 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: =""
+                            Width: =10
+                            ZIndex: =1
+
+                        TextInput1_2 As text:
+                            Default: ="Text input"
+                            FillPortions: =1
+                            ZIndex: =6
+
+                        Label36_22 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: =""
+                            Width: =10
+                            ZIndex: =7
+
+                        Button17_3 As button:
+                            Text: ="Add"
+                            ZIndex: =8
+
+                        Label36_24 As label:
+                            Color: =RGBA(255, 0, 0, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =30
+                            Text: =""
+                            Width: =10
+                            ZIndex: =9
+
+            Container41_2 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =40
+                LayoutMode: =LayoutMode.Auto
+                Width: =60
+                ZIndex: =3
+
+            Container41_3 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =300
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =4
+
+                Container43_1 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(139, 154, 159, 1)
+                    BorderThickness: =2
+                    FillPortions: =0
+                    Height: =250
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    Label31_1 As label:
+                        Fill: =RGBA(214, 221, 224, 1)
+                        FontWeight: =FontWeight.Bold
+                        PaddingLeft: =10
+                        Size: =16
+                        Text: ="Existing Configuration"
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    Label36_4 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Height: =30
+                        Text: |-
+                            ="Stakeholder : Supplier"
+                        Width: =300
+                        ZIndex: =2
+
+                    Container26_3 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =20
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =3
+
+                        Icon13_2 As icon.HorizontalLine:
+                            BorderColor: =RGBA(102, 102, 102, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(102, 102, 102, 1)
+                            Height: =2
+                            Icon: =Icon.HorizontalLine
+                            PaddingBottom: =10
+                            PaddingLeft: =10
+                            PaddingRight: =10
+                            PaddingTop: =10
+                            Width: =Parent.Width-20
+                            X: =52
+                            Y: =60
+                            ZIndex: =1
+
+            Container41_4 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =20
+                LayoutMode: =LayoutMode.Auto
+                Width: =40
+                ZIndex: =5
 
