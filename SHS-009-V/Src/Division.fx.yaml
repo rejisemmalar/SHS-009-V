@@ -1740,6 +1740,7 @@ Division As screen:
                 ZIndex: =4
 
                 Button4 As button:
+                    DisplayMode: =If(Form1.Valid,DisplayMode.Edit,DisplayMode.Disabled)
                     OnSelect: |
                         =SubmitForm(Form1);
                         NewForm(Form1);
