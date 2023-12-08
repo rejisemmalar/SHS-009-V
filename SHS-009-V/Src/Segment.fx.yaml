@@ -894,10 +894,18 @@ Segment As screen:
                     Fill: =RGBA(54, 176, 75, 1)
                     HoverFill: =Self.Fill
                     OnSelect: |
-                        =If(IsBlank(Form_Segment),Notify("Please Add The Fields"));
-                        
-                        SubmitForm(Form_Segment);NewForm(Form_Segment);
-                        UpdateContext({ShowPopup:false});Notify("The Segment has been added sucessfully",NotificationType.Success);ResetForm(Form_Segment);
+                        =If(
+                          DataCardValue3.Text="",
+                            Notify("Please Add The Fields");
+                            SubmitForm(Form_Segment);
+                            NewForm(Form_Segment);
+                            UpdateContext({ShowPopup: false});
+                            Notify(
+                                "The Segment has been added sucessfully",
+                                NotificationType.Success
+                            );
+                            ResetForm(Form_Segment)
+                        );
                     PressedColor: =Self.Color
                     PressedFill: =Self.Fill
                     Text: ="Save"
