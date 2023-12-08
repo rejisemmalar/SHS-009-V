@@ -6524,126 +6524,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'SHS Configuration'.'SHSConfig Main'.Container40.Container41_1.Container43.Container26_5.Dropdown1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'SHS Configuration'.'SHSConfig Main'.Container40.Container41_1.Container43.Container26_5.Dropdown1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SHS Configuration",
-                "type": "'SHS Configuration'.'SHSConfig Main'.Container40.Container41_1.Container43.Container26_5.Dropdown1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'SHS Configuration'.'SHSConfig Main'.Container40.Container41_1.Container43.Container26_8.Dropdown1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'SHS Configuration'.'SHSConfig Main'.Container40.Container41_1.Container43.Container26_8.Dropdown1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SHS Configuration",
-                "type": "'SHS Configuration'.'SHSConfig Main'.Container40.Container41_1.Container43.Container26_8.Dropdown1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'SHS Configuration'.'SHSConfig Main'.Container40.Container41_1.Container43.Container26_11.TextInput1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'SHS Configuration'.'SHSConfig Main'.Container40.Container41_1.Container43.Container26_11.TextInput1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SHS Configuration",
-                "type": "'SHS Configuration'.'SHSConfig Main'.Container40.Container41_1.Container43.Container26_11.TextInput1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'SHS Configuration'.'SHSConfig Main'.Container40.Container41_1.Container43.Container26_14.TextInput1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'SHS Configuration'.'SHSConfig Main'.Container40.Container41_1.Container43.Container26_14.TextInput1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SHS Configuration",
-                "type": "'SHS Configuration'.'SHSConfig Main'.Container40.Container41_1.Container43.Container26_14.TextInput1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.search_name"
                 }
               ],
@@ -7437,6 +7317,96 @@
                 "member": "Height",
                 "module": "Segment Member",
                 "type": "'Segment Member'.CanVasContainer_8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'SHS Configuration'.CanVasContainer_16.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'SHS Configuration'.CanVasContainer_16.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "SHS Configuration",
+                "type": "'SHS Configuration'.CanVasContainer_16"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'SHS Configuration'.CanVasContainer_16.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'SHS Configuration'.CanVasContainer_16.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "SHS Configuration",
+                "type": "'SHS Configuration'.CanVasContainer_16"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'SHS Configuration'.CanVasContainer_16.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'SHS Configuration'.CanVasContainer_16.Height",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "SHS Configuration",
+                "type": "'SHS Configuration'.CanVasContainer_16"
               }
             }
           ],

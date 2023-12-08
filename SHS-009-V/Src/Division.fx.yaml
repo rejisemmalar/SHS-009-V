@@ -386,13 +386,13 @@ Division As screen:
                 Button4_4 As button:
                     OnSelect: |-
                         =Remove(Division_1,Gallery6.Selected);UpdateContext({varshowdeletedivpopup:false});Notify("The divison has been deleted successfully",NotificationType.Success)
-                    Text: ="Save"
+                    Text: ="Yes"
                     ZIndex: =1
 
                 Button4_5 As button:
                     OnSelect: |-
                         =UpdateContext({varDeletePopUp:false})
-                    Text: ="Cancel"
+                    Text: ="No"
                     ZIndex: =2
 
     "'Edit Pop' As groupContainer.verticalAutoLayoutContainer":
