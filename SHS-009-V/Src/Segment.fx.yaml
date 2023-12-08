@@ -175,7 +175,8 @@ Segment As screen:
                         DisabledColor: =RGBA(255, 255, 255, 1)
                         DisabledFill: =RGBA(4, 107, 28, 1)
                         Fill: =RGBA(4, 107, 28, 1)
-                        HoverFill: =ColorFade(Self.BorderColor, 20%)
+                        HoverBorderColor: =Self.Fill
+                        HoverFill: =Self.Fill
                         OnSelect: |-
                             =UpdateContext({ShowPopup:true})
                         PressedColor: =Self.Color
@@ -270,7 +271,9 @@ Segment As screen:
 
             Gallery9 As gallery.galleryVertical:
                 DelayItemLoading: =true
-                Items: =Filter(Segment_2,StartsWith('Segment Code',TextInput1_1.Text))
+                Items: |+
+                    =Filter(Segment_2,StartsWith('Segment Name',TextInput1_1.Text))
+                    
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =287
                 LayoutMinWidth: =320
@@ -888,15 +891,25 @@ Segment As screen:
                 ZIndex: =4
 
                 Button13 As button:
-                    OnSelect: |-
-                        =SubmitForm(Form_Segment);NewForm(Form_Segment);
-                        UpdateContext({ShowPopup:false});Notify("The Segment has been added sucessfully",NotificationType.Success);ResetForm(Form_Segment)
+                    Fill: =RGBA(54, 176, 75, 1)
+                    HoverFill: =Self.Fill
+                    OnSelect: |
+                        =If(IsBlank(Form_Segment),Notify("Please Add The Fields"));
+                        
+                        SubmitForm(Form_Segment);NewForm(Form_Segment);
+                        UpdateContext({ShowPopup:false});Notify("The Segment has been added sucessfully",NotificationType.Success);ResetForm(Form_Segment);
+                    PressedColor: =Self.Color
+                    PressedFill: =Self.Fill
                     Text: ="Save"
                     ZIndex: =1
 
                 Button13_2 As button:
+                    Fill: =RGBA(54, 176, 75, 1)
+                    HoverFill: =Self.Fill
                     OnSelect: |-
                         =UpdateContext({ShowPopup:false})
+                    PressedColor: =Self.Color
+                    PressedFill: =Self.Fill
                     Text: ="Cancel"
                     ZIndex: =2
 
