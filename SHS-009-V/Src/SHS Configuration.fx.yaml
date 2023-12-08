@@ -445,7 +445,7 @@
                         Button17_2 As button:
                             OnSelect: |
                                 =Set(VarNewYear,Newyear.Text);
-                                If(VarNewYear="",Notify("Please Enter new Year",NotificationType.Warning,1000),Patch('HACT Config',Defaults('HACT Config'),{'New Performance Year':Newyear.Text});)
+                                If(VarNewYear="",Notify("Please Enter new Year",NotificationType.Warning,1000),Patch('HACT Config',Defaults('HACT Config'),{'New Performance Year':Newyear.Text});Notify("New Performance Year Added",NotificationType.Success,1000))
                             Text: ="Add"
                             ZIndex: =8
 
