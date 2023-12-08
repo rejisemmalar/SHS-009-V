@@ -139,7 +139,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Search",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 996,
+        "PublishOrderIndex": 1007,
         "Rules": [
           {
             "Category": "Data",
@@ -485,7 +485,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Search",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 997,
+        "PublishOrderIndex": 1008,
         "Rules": [
           {
             "Category": "Design",
@@ -703,7 +703,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Search",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 998,
+        "PublishOrderIndex": 1009,
         "Rules": [
           {
             "Category": "Design",

@@ -56,6 +56,9 @@
           "Factor": {
             "tableName": "ccf22452-b069-45bd-b208-f2aa065409b8"
           },
+          "HACT Config": {
+            "tableName": "9ad76def-8225-4d10-b26c-5f26e0dea15b"
+          },
           "Login Details": {
             "tableName": "329e5a5f-1293-4368-a3f2-67d91be2f1bb"
           },
@@ -109,7 +112,8 @@
       "Login Details",
       "MapDiv(Factors)",
       "MapDiv(subfactors)_1",
-      "MapDiv(subfactors)"
+      "MapDiv(subfactors)",
+      "HACT Config"
     ],
     "dependencies": {},
     "dependents": [
