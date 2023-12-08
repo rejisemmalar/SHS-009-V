@@ -317,7 +317,7 @@
                 Height: =50
                 Icon: =Icon.Cancel
                 OnSelect: |-
-                    =UpdateContext({showpopup:false})
+                    =UpdateContext({addpopupshsuser:false})
                 Width: =50
                 ZIndex: =1
 
