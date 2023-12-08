@@ -20,7 +20,7 @@ Segment As screen:
             Width: =30
             ZIndex: =1
 
-        "'Button&heading_1' As groupContainer.verticalAutoLayoutContainer":
+        "'Button&heading_segment' As groupContainer.verticalAutoLayoutContainer":
             DropShadow: =DropShadow.None
             FillPortions: =0
             Height: =80
@@ -31,6 +31,7 @@ Segment As screen:
             ZIndex: =3
 
             Container26_1 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 Height: =Parent.Height
                 LayoutMinHeight: =80
@@ -49,6 +50,7 @@ Segment As screen:
                     ZIndex: =1
 
             Container27_4 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 Height: =Parent.Height
                 LayoutGap: =10
@@ -124,7 +126,7 @@ Segment As screen:
                             HoverFill: =Self.Fill
                             OnSelect: |+
                                 =ForAll(
-                                    Gallery9.AllItems As Data,
+                                    Gallery_segment.AllItems As Data,
                                     Collect(
                                         CSVData,
                                         {
@@ -149,7 +151,7 @@ Segment As screen:
                             Icon: =Icon.Export
                             OnSelect: |+
                                 =ForAll(
-                                    Gallery9.AllItems As Data,
+                                    Gallery_segment.AllItems As Data,
                                     Collect(
                                         CSVData,
                                         {
@@ -269,7 +271,7 @@ Segment As screen:
             LayoutMode: =LayoutMode.Auto
             ZIndex: =5
 
-            Gallery9 As gallery.galleryVertical:
+            Gallery_segment As gallery.galleryVertical:
                 DelayItemLoading: =true
                 Items: |+
                     =Filter(Segment_2,StartsWith('Segment Name',TextInput1_1.Text)||StartsWith('Segment Code',TextInput1_1.Text))
@@ -420,7 +422,7 @@ Segment As screen:
                     Fill: =RGBA(215, 58, 60, 1)
                     HoverFill: =Self.Fill
                     OnSelect: |-
-                        =Remove(Segment_2,Gallery9.Selected);UpdateContext({ShowPopup_Delete:false});Notify("The Segment has been deleted sucessfully",NotificationType.Success)
+                        =Remove(Segment_2,Gallery_segment.Selected);UpdateContext({ShowPopup_Delete:false});Notify("The Segment has been deleted sucessfully",NotificationType.Success)
                     PressedColor: =Self.Color
                     PressedFill: =Self.Fill
                     Text: ="Yes"
@@ -494,7 +496,7 @@ Segment As screen:
 
                 Form5 As form:
                     DataSource: =Segment_2
-                    Item: =Gallery9.Selected
+                    Item: =Gallery_segment.Selected
                     LayoutMinHeight: =250
                     LayoutMinWidth: =400
                     NumberOfColumns: =1
@@ -765,6 +767,7 @@ Segment As screen:
 
                         DataCardValue3 As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            BorderThickness: =1
                             Default: =Parent.Default
                             DelayOutput: =true
                             DisplayMode: =Parent.DisplayMode
