@@ -392,7 +392,7 @@ Division As screen:
                 Button4_5 As button:
                     OnSelect: |-
                         =UpdateContext({varDeletePopUp:false})
-                    Text: ="Cancel"
+                    Text: ="No"
                     ZIndex: =2
 
     "'Edit Pop' As groupContainer.verticalAutoLayoutContainer":
