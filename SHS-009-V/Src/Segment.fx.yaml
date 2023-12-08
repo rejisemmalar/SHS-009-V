@@ -272,7 +272,7 @@ Segment As screen:
             Gallery9 As gallery.galleryVertical:
                 DelayItemLoading: =true
                 Items: |+
-                    =Filter(Segment_2,StartsWith('Segment Name',TextInput1_1.Text))
+                    =Filter(Segment_2,StartsWith('Segment Name',TextInput1_1.Text)||StartsWith('Segment Code',TextInput1_1.Text))
                     
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =287
@@ -649,6 +649,7 @@ Segment As screen:
                 ZIndex: =4
 
                 Button13_3 As button:
+                    DisplayMode: =
                     Fill: =RGBA(71, 158, 245, 1)
                     HoverFill: =Self.Fill
                     OnSelect: |-
@@ -891,6 +892,7 @@ Segment As screen:
                 ZIndex: =4
 
                 Button13 As button:
+                    DisplayMode: =If(Form_Segment.Valid,DisplayMode.Edit,DisplayMode.Disabled)
                     Fill: =RGBA(54, 176, 75, 1)
                     HoverFill: =Self.Fill
                     OnSelect: |

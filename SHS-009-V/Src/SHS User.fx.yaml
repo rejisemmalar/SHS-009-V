@@ -876,8 +876,9 @@
                 ZIndex: =3
 
                 Button14 As button:
+                    DisplayMode: =If(Form7.Valid,DisplayMode.Edit,DisplayMode.Disabled)
                     OnSelect: |-
-                        =SubmitForm(Form7);NewForm(Form7);UpdateContext({addpopupshsuser:false});Notify("The Item has been added successfully",NotificationType.Success)
+                        =SubmitForm(Form7);NewForm(Form7);UpdateContext({addpopupshsuser:false});Notify("The Item has been added successfully",NotificationType.Success);ResetForm(Form7)
                     RadiusBottomLeft: =17
                     RadiusBottomRight: =17
                     RadiusTopLeft: =17
