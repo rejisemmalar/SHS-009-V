@@ -312,10 +312,19 @@
             Width: =900
             ZIndex: =1
 
+            Icon28_5 As icon.Cancel:
+                AlignInContainer: =AlignInContainer.End
+                Height: =50
+                Icon: =Icon.Cancel
+                OnSelect: |-
+                    =UpdateContext({showpopup:false})
+                Width: =50
+                ZIndex: =1
+
             Label24 As label:
                 FontWeight: =FontWeight.Bold
                 Text: ="Add SHS Users"
-                ZIndex: =1
+                ZIndex: =2
 
             Form7 As form:
                 DataSource: ='SHS-Users'
@@ -324,7 +333,7 @@
                 Height: =400
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
-                ZIndex: =2
+                ZIndex: =3
 
                 Stakeholder_DataCard2 As typedDataCard.textualEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -873,7 +882,7 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                ZIndex: =3
+                ZIndex: =4
 
                 Button14 As button:
                     DisplayMode: =If(Form7.Valid,DisplayMode.Edit,DisplayMode.Disabled)
