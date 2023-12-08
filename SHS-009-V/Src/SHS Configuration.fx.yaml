@@ -157,10 +157,12 @@
                             Width: =10
                             ZIndex: =1
 
-                        Dropdown1 As dropdown:
+                        CrntYrDrpDn As dropdown:
                             AllowEmptySelection: =true
                             FillPortions: =1
                             Items: ='HACT Config'
+                            OnChange: |-
+                                =UpdateContext({VarCrntYear:CrntYrDrpDn.SelectedText})
                             ZIndex: =2
 
                         Label36_8 As label:
@@ -172,7 +174,42 @@
                             ZIndex: =3
 
                         Button17 As button:
-                            OnSelect: =Patch('HACT Config',Defaults(LookUp()))
+                            OnSelect: |-
+                                =If(
+                                    IsBlank(VarCrntYear),
+                                    Notify(
+                                        "Please Select Current Year",
+                                        NotificationType.Error,
+                                        2000
+                                    ),
+                                    If(
+                                        IsBlank(VarNewYear),
+                                        Notify(
+                                            "Please Enter New Performance Year",
+                                            NotificationType.Error,
+                                            2000
+                                        ),
+                                        Patch(
+                                            'HACT Config',
+                                            LookUp(
+                                                'HACT Config',
+                                                'New Performance Year' = VarNewYear
+                                            ),
+                                            {
+                                                'Current Year': {
+                                                    Id: CrntYrDrpDn.Selected.ID,
+                                                    Value: CrntYrDrpDn.Selected.Title
+                                                }
+                                            }
+                                        );
+                                        Notify(
+                                            "Current Year Has Been Updated Successfully",
+                                            NotificationType.Success,
+                                            2000
+                                        )
+                                    );
+                                    
+                                )
                             Text: ="Update"
                             ZIndex: =4
 
@@ -257,10 +294,12 @@
                             Width: =10
                             ZIndex: =1
 
-                        Dropdown1_1 As dropdown:
+                        CrntQtrDrpDn As dropdown:
                             AllowEmptySelection: =true
                             FillPortions: =1
                             Items: =["Q1","Q2","Q3","Q4"]
+                            OnChange: |-
+                                =UpdateContext({VarCrntQrtr:CrntQtrDrpDn.SelectedText})
                             ZIndex: =2
 
                         Label36_13 As label:
@@ -272,6 +311,39 @@
                             ZIndex: =3
 
                         Button17_1 As button:
+                            OnSelect: |-
+                                =If(
+                                    IsBlank(VarCrntQrtr),
+                                    Notify(
+                                        "Please Select Current Quarter",
+                                        NotificationType.Error,
+                                        2000
+                                    ),
+                                    If(
+                                        IsBlank(VarNewYear),
+                                        Notify(
+                                            "Please Enter New Performance Year",
+                                            NotificationType.Error,
+                                            2000
+                                        ),
+                                        Patch(
+                                            'HACT Config',
+                                            LookUp(
+                                                'HACT Config',
+                                                'New Performance Year' = VarNewYear
+                                            ),
+                                            {
+                                                'Current Quarter':VarCrntQrtr                
+                                            }
+                                        );
+                                        Notify(
+                                            "Current Quarter Has Been Updated Successfully",
+                                            NotificationType.Success,
+                                            2000
+                                        )
+                                    );
+                                    
+                                )
                             Text: ="Update"
                             ZIndex: =4
 
@@ -371,9 +443,9 @@
                             ZIndex: =7
 
                         Button17_2 As button:
-                            OnSelect: |-
+                            OnSelect: |
                                 =Set(VarNewYear,Newyear.Text);
-                                Patch('HACT Config',Defaults('HACT Config'),{'New Performance Year':VarNewYear})
+                                If(VarNewYear="",Notify("Please Enter new Year",NotificationType.Warning,1000),Patch('HACT Config',Defaults('HACT Config'),{'New Performance Year':Newyear.Text});)
                             Text: ="Add"
                             ZIndex: =8
 
@@ -458,7 +530,7 @@
                             Width: =10
                             ZIndex: =1
 
-                        TextInput1_2 As text:
+                        MailTxt As text:
                             Default: =""
                             FillPortions: =1
                             HintText: |-
@@ -474,6 +546,39 @@
                             ZIndex: =7
 
                         Button17_3 As button:
+                            OnSelect: |-
+                                =If(
+                                    IsBlank(MailTxt.Text),
+                                    Notify(
+                                        "Please Enter Email",
+                                        NotificationType.Error,
+                                        2000
+                                    ),
+                                    If(
+                                        IsBlank(VarNewYear),
+                                        Notify(
+                                            "Please Enter New Performance Year",
+                                            NotificationType.Error,
+                                            2000
+                                        ),
+                                        Patch(
+                                            'HACT Config',
+                                            LookUp(
+                                                'HACT Config',
+                                                'New Performance Year' = VarNewYear
+                                            ),
+                                            {
+                                                'Trigger Mail':MailTxt.Text                
+                                            }
+                                        );
+                                        Notify(
+                                            "Mail Has Been Updated Successfully",
+                                            NotificationType.Success,
+                                            2000
+                                        )
+                                    );
+                                    
+                                )
                             Text: ="Add"
                             ZIndex: =8
 
@@ -594,10 +699,9 @@
                             ZIndex: =1
 
                         Label36_26 As label:
-                            Color: =RGBA(255, 0, 0, 1)
-                            FontWeight: =FontWeight.Bold
+                            FontWeight: =FontWeight.Semibold
                             Height: =30
-                            Text: ="*"
+                            Text: =VarCrntYear.Value
                             Width: =194
                             ZIndex: =2
 
@@ -648,10 +752,9 @@
                             ZIndex: =1
 
                         Label36_28 As label:
-                            Color: =RGBA(255, 0, 0, 1)
-                            FontWeight: =FontWeight.Bold
+                            FontWeight: =FontWeight.Semibold
                             Height: =30
-                            Text: ="*"
+                            Text: =VarCrntQrtr.Value
                             Width: =194
                             ZIndex: =2
 
