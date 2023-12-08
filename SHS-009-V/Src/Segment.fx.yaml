@@ -272,7 +272,7 @@ Segment As screen:
             Gallery9 As gallery.galleryVertical:
                 DelayItemLoading: =true
                 Items: |+
-                    =Filter(Segment_2,StartsWith('Segment Name',TextInput1_1.Text))
+                    =Filter(Segment_2,StartsWith('Segment Name',TextInput1_1.Text)||StartsWith('Segment Code',TextInput1_1.Text))
                     
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =287
