@@ -125,8 +125,9 @@
                         Label36_5 As label:
                             FontWeight: =FontWeight.Semibold
                             Height: =30
+                            PaddingLeft: =20
                             Text: ="Current Year"
-                            Width: =117
+                            Width: =135
                             ZIndex: =1
 
                         Label36_6 As label:
@@ -203,7 +204,7 @@
                             PaddingLeft: =10
                             PaddingRight: =10
                             PaddingTop: =10
-                            Width: =Parent.Width-20
+                            Width: =Parent.Width-40
                             X: =52
                             Y: =60
                             ZIndex: =1
@@ -223,8 +224,9 @@
                         Label36_10 As label:
                             FontWeight: =FontWeight.Semibold
                             Height: =30
-                            Text: ="Current Year"
-                            Width: =117
+                            PaddingLeft: =20
+                            Text: ="Current Quarter"
+                            Width: =165
                             ZIndex: =1
 
                         Label36_11 As label:
@@ -301,7 +303,7 @@
                             PaddingLeft: =10
                             PaddingRight: =10
                             PaddingTop: =10
-                            Width: =Parent.Width-20
+                            Width: =Parent.Width-40
                             X: =52
                             Y: =60
                             ZIndex: =1
@@ -321,8 +323,9 @@
                         Label36_15 As label:
                             FontWeight: =FontWeight.Semibold
                             Height: =30
-                            Text: ="Current Year"
-                            Width: =117
+                            PaddingLeft: =20
+                            Text: ="New Perforance Year"
+                            Width: =205
                             ZIndex: =1
 
                         Label36_16 As label:
@@ -353,8 +356,9 @@
                             ZIndex: =1
 
                         TextInput1 As text:
-                            Default: ="Text input"
+                            Default: =""
                             FillPortions: =1
+                            HintText: ="Enter New Performance Year "
                             ZIndex: =6
 
                         Label36_18 As label:
@@ -398,7 +402,7 @@
                             PaddingLeft: =10
                             PaddingRight: =10
                             PaddingTop: =10
-                            Width: =Parent.Width-20
+                            Width: =Parent.Width-40
                             X: =52
                             Y: =60
                             ZIndex: =1
@@ -418,8 +422,9 @@
                         Label36_20 As label:
                             FontWeight: =FontWeight.Semibold
                             Height: =30
-                            Text: ="Current Year"
-                            Width: =117
+                            PaddingLeft: =20
+                            Text: ="Trigger Mail"
+                            Width: =128
                             ZIndex: =1
 
                         Label36_21 As label:
@@ -450,8 +455,10 @@
                             ZIndex: =1
 
                         TextInput1_2 As text:
-                            Default: ="Text input"
+                            Default: =""
                             FillPortions: =1
+                            HintText: |-
+                                ="Eg: test@dewa.gov.ae"
                             ZIndex: =6
 
                         Label36_22 As label:

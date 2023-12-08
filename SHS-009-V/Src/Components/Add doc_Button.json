@@ -115,7 +115,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Add doc_Button",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 948,
+        "PublishOrderIndex": 1003,
         "Rules": [
           {
             "Category": "Data",
@@ -399,7 +399,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Add doc_Button",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 949,
+        "PublishOrderIndex": 1004,
         "Rules": [
           {
             "Category": "Design",
@@ -586,7 +586,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638376162274434747",
+    "LastModifiedTimestamp": "638376220926589338",
     "Name": "Add doc_Button",
     "Rules": [
       {
@@ -645,7 +645,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638376162274434747",
+  "LastModifiedTimestamp": "638376220926589338",
   "Name": "2af266b150a14e0db8f342db4b79e80e",
   "OverridableProperties": {},
   "Version": "638333195104792096"
