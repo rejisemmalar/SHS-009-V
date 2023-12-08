@@ -649,7 +649,7 @@ Segment As screen:
                 ZIndex: =4
 
                 Button13_3 As button:
-                    DisplayMode: =If(Form_Segment.Valid,DisplayMode.Edit,DisplayMode.Disabled)
+                    DisplayMode: =
                     Fill: =RGBA(71, 158, 245, 1)
                     HoverFill: =Self.Fill
                     OnSelect: |-
