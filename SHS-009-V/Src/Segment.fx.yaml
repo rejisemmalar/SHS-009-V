@@ -891,11 +891,11 @@ Segment As screen:
                 ZIndex: =4
 
                 Button13 As button:
+                    DisplayMode: =If(Form_Segment.Valid,DisplayMode.Edit,DisplayMode.Disabled)
                     Fill: =RGBA(54, 176, 75, 1)
                     HoverFill: =Self.Fill
-                    OnSelect: |
-                        =If(IsBlank(Form_Segment),Notify("Please Add The Fields"));
-                        
+                    OnSelect: |-
+                        =
                         SubmitForm(Form_Segment);NewForm(Form_Segment);
                         UpdateContext({ShowPopup:false});Notify("The Segment has been added sucessfully",NotificationType.Success);ResetForm(Form_Segment);
                     PressedColor: =Self.Color
